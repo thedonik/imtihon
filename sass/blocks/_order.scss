@@ -1,0 +1,86 @@
+.order {
+  padding-top: 29.5px;
+  padding-bottom: 200px;
+
+
+
+  
+  @media only screen and(max-width: 768px) {
+  }
+
+  &__wrapper {
+    position: relative;
+
+
+
+    &::before {
+      position: absolute;
+      left: -165px;
+      top: 45px;
+      display: inline-block;
+      width: 974px;
+      height: 15px;
+      content: "";
+      background-image: url("../../images/line.svg");
+      background-repeat: no-repeat;
+      z-index: 1;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    max-width: 350px;
+    width: 100%;
+
+    &::before {
+      width: 96px;
+      height: 96px;
+      display: block;
+      content: "";
+    }
+  }
+
+  &__title {
+    margin-top: 40px;
+    margin-bottom: 27px;
+    font-family: "Space Mono";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07143px;
+    color: #495567;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939caa;
+  }
+}
+
+.first {
+  background-image: url("../../images/calc.svg");
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+
+.second {
+  background-image: url("../../images/scooter.svg");
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+
+.third {
+  background-image: url("../../images/ride.svg");
+  background-repeat: no-repeat;
+  z-index: 10;
+}

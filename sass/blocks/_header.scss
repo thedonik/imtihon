@@ -1,26 +1,29 @@
 .site-header {
   padding: 36px 0;
 
+  &__logo{
+    margin-right: 58px;
+  }
+
   &__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
+    
   }
 
   &__nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    margin-right: auto;
   }
 
   &__list {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    list-style-type: none;
+    list-style: none;
     padding: 0;
     margin: 0;
-    margin-right: 511px;
+    margin-left: auto;
   }
 
   &__item {
