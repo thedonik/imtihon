@@ -370,15 +370,41 @@ img {
 .site-header {
   padding: 36px 0;
 }
+.site-header__burger {
+  display: none;
+}
+@media only screen and (max-width: 700px) {
+  .site-header__burger {
+    display: inline-block;
+  }
+}
 .site-header__logo {
   margin-right: 58px;
+}
+@media only screen and (max-width: 700px) {
+  .site-header__logo {
+    margin: 0 auto;
+  }
 }
 .site-header__inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+.site-header__wrapper {
+  max-width: 940px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 700px) {
+  .site-header__wrapper {
+    display: none;
+  }
+}
 .site-header__nav {
+  justify-content: space-between;
   margin-right: auto;
 }
 .site-header__list {
@@ -403,6 +429,7 @@ img {
   font-size: 15px;
   line-height: 25px;
   color: #939CAA;
+  transition: all 0.4s ease;
 }
 .site-header__link:hover {
   color: #FCB72B;
@@ -419,8 +446,9 @@ img {
   font-size: 15px;
   line-height: 25px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   border: 3px solid transparent;
+  transition: all 0.4s ease;
 }
 .main-btn:hover {
   background-color: #fff;
